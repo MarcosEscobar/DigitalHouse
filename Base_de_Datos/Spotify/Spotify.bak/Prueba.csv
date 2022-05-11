@@ -1,0 +1,6 @@
+gender_id,gender_name
+1,Hombre
+2,Mujer
+3,Otro
+4,"Prefiero no decirlo"
+5,NULL

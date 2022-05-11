@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1024px;
+    margin: auto;
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-color: #222222;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0px 20px;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 284px;
+    align-items: center;
+    height: 100px;
+}
+nav a{
+    color: #F3F3F3;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #E5E5E5;
+    justify-content: space-between;
+    padding: 35px 19px;
+}
+.promo, .clase-pizzas{
+    width: 490px;
+    height: 350px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+main div h1, main div h2{
+    font-size: 24px;
+    margin-bottom: 58px;
+    color: #FC200C;
+}
+main div h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+main div li{
+    margin-bottom: 10px;
+}
+.promo {
+    background-image: url(/img/delivery.png);
+    padding: 20px;
+}
+.promo span{
+    color: #F3F3F3;
+}
+.clase-pizzas{
+    background-color: #FFFFFF;
+    padding: 26px 74px 60px 51px;
+}
+.clase-pizzas div{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    background-color: #393737;
+    justify-content: space-between;
+    padding: 20px 40px 20px 20px;
+    height: 150px;
+    align-items: center;
+}
+footer nav{
+    display: grid;
+    height: 112px;
+}
