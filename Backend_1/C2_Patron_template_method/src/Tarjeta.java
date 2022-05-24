@@ -10,8 +10,6 @@ public abstract class Tarjeta {
     private Calendar todayCalendar;
     public Date fechaActual = new Date(16/05/2022);
 
-    Calendar.setTime(date)
-
     public Tarjeta() {
     }
 
