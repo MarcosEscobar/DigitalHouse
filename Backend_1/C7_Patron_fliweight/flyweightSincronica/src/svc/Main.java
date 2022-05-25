@@ -1,19 +1,19 @@
 package svc;
-import model.arbol;
+import model.Bosque;
 import svc.imp.arbolFactory;
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        ArrayList<arbol> bosque=new ArrayList<>();
-        arbolFactory AFactory=new arbolFactory();
+        Bosque bosque = new Bosque("bosque",1000000);
+        arbolFactory AFactory = new arbolFactory();
 
         for (int i = 0; i < 500000; i++) {
-            bosque.add(AFactory.obtenerArbolDeFactory("rojo"));
-            bosque.add(AFactory.obtenerArbolDeFactory("verde"));
+            bosque.agregarArbol(AFactory.obtenerArbolDeFactory("rojo"));
+            bosque.agregarArbol(AFactory.obtenerArbolDeFactory("verde"));
         }
         Runtime runtime = Runtime.getRuntime();
         System.out.println("Memoria usada: " + (runtime.totalMemory() - runtime.freeMemory()) / (1024 * 1024));
-        System.out.println("Tamaño del bosque: "+bosque.size()+" de árboles");
+        System.out.println("Tamaño del bosque: "+bosque.getSize()+" de árboles");
+        System.out.println("Nombre del bosque: "+bosque.getNombre());
     }
 }

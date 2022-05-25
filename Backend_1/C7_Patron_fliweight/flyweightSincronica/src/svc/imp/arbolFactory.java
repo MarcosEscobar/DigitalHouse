@@ -1,8 +1,8 @@
 package svc.imp;
+
 import model.arbol;
 
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class arbolFactory{
     private HashMap<String, arbol> arboles=new HashMap();
