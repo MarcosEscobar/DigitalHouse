@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class BusquedaVuelo {
 
-    ArrayList<Vuelo> vuelos = new ArrayList<>();
+    ArrayList < Vuelo > vuelos = new ArrayList < > ();
 
     public void agregar(Vuelo vuelo) {
         this.vuelos.add(vuelo);

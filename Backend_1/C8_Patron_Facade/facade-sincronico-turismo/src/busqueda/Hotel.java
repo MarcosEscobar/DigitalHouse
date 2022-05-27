@@ -25,8 +25,8 @@ public class Hotel {
     public void mostrarInformacion() {
         System.out.println(nombre);
         System.out.println("\tFecha salida:\t" + fechaSalida +
-                           "\n\tFecha regreso:\t" + fechaRegreso +
-                           "\n\tCiudad:\t" + ciudad);
+            "\n\tFecha regreso:\t" + fechaRegreso +
+            "\n\tCiudad:\t" + ciudad);
     }
 
     @Override

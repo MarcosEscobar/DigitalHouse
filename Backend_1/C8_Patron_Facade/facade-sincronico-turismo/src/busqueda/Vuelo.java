@@ -28,9 +28,9 @@ public class Vuelo {
     public void mostrarInformacion() {
         System.out.println(nombre);
         System.out.println("\tFecha salida:\t" + fechaSalida +
-                           "\n\tFecha regreso:\t" + fechaRegreso +
-                           "\n\tOrigen:\t" + origen +
-                           "\n\tDestino:\t" + destino);
+            "\n\tFecha regreso:\t" + fechaRegreso +
+            "\n\tOrigen:\t" + origen +
+            "\n\tDestino:\t" + destino);
     }
 
     @Override
