@@ -1,0 +1,60 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam Shadowing true
+
+skinparam class {
+    ArrowColor Purple
+    BackgroundColor Pink
+    BorderColor Purple
+}
+
+skinparam note {
+    BackgroundColor LightYellow
+    BorderColor Purple
+}
+
+interface IFachadaBusqueda {
+    + buscar(fechaSalida : String, fechaRegreso : String, origen : String, destino : String)
+}
+
+class FachadaBusqueda implements IFachadaBusqueda{
+    + buscar(fechaSalida : String, fechaRegreso : String, origen : String, destino : String)
+}
+
+class BusquedaVuelo {
+    + buscar(fechaSalida : String, fechaRegreso : String, origen : String, destino : String)
+}
+
+class BusquedaHotel {
+    + buscar(fechaSalida : String, fechaRegreso : String, destino : String)
+}
+
+class Buscador {
+    + {static} buscar(lista : ArrayList, objeto : Object) : Object
+}
+
+class Vuelo {
+    - fechaSalida : String
+    - fechaRegreso : String
+    - origen : String
+    - destino : String
+    + mostrarInformacion() : void
+    + equals(o : Object)
+}
+
+class Hotel {
+    - fechaSalida : String
+    - fechaRegreso : String
+    - ciudad : String
+    + mostrarInformacion() : void
+    + equals(o : Object)
+}
+
+FachadaBusqueda --> BusquedaVuelo
+FachadaBusqueda --> BusquedaHotel
+BusquedaVuelo ..> Buscador
+BusquedaHotel ..> Buscador
+BusquedaVuelo "1" o-- "*" Vuelo
+BusquedaHotel "1" o-- "*" Hotel
+
+@enduml
