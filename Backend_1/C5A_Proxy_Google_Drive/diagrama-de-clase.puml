@@ -1,0 +1,48 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam Shadowing true
+
+skinparam class {
+    ArrowColor Purple
+    BackgroundColor Pink
+    BorderColor Purple
+}
+
+skinparam note {
+    BackgroundColor LightYellow
+    BorderColor Purple
+}
+
+namespace drive #A9F5F2 {
+
+    class Drive {
+        + abrir(url : String, mailUsuario : String) : void
+        + subir(doc : DocumentoProxy) : void
+        - obtenerDocumento(url : String) : Documento
+    }
+
+    abstract class Documento {
+        # url : String
+        + {abstract} abrir(mailUsuario : String) : void
+        + {abstract} mostrarHistorialDeAccesos() : void
+    }
+
+    class DocumentoProxy extends Documento {
+        - usuariosAutorizados : List<String>
+        + abrir(mailUsuario : String) : void
+        + mostrarHistorialDeAccesos() : void
+        - estaAutorizado(mail : String) : boolean
+    }
+
+    class DocumentoConcreto extends Documento {
+        - id : int
+        - contenido : String
+        - historialAccesos : List<String>
+        + abrir(mailUsuario : String) : void
+        + mostrarHistorialDeAccesos() : void
+    }
+
+    DocumentoProxy o- DocumentoConcreto
+    Drive "1" *-- "*" DocumentoProxy
+}
+@enduml

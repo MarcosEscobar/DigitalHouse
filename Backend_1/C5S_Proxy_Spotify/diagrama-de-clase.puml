@@ -1,0 +1,41 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam Shadowing true
+
+skinparam class {
+    ArrowColor Purple
+    BackgroundColor Pink
+    BorderColor Purple
+}
+
+skinparam note {
+    BackgroundColor LightYellow
+    BorderColor Purple
+}
+
+namespace descarga #A9F5F2 {
+
+    interface DescargaSpotify {
+        + descargar(usuario : Usuario, cancion : String)
+    }
+
+    class ProxyDescarga implements DescargaSpotify {
+        + descargar(usuario : Usuario, cancion : String)
+        - esUsuarioPremium(usuario : Usuario) : boolean
+    }
+
+    class ServicioDescarga implements DescargaSpotify {
+        + descargar(usuario : Usuario, cancion : String)
+    }
+
+    ProxyDescarga o- ServicioDescarga
+}
+
+class Usuario {
+    - id : int
+    - tipoUsuario : String
+    + Usuario(id, tipoUsuario)
+}
+
+descarga .left> Usuario
+@enduml

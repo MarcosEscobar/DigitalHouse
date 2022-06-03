@@ -1,0 +1,59 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam Shadowing true
+
+skinparam class {
+    ArrowColor Purple
+    BackgroundColor Pink
+    BorderColor Purple
+}
+
+skinparam note {
+    BackgroundColor LightYellow
+    BorderColor Purple
+}
+
+namespace comprobaciones #A9F5F2 {
+    abstract class Control {
+        + Control()
+        + Control(siguienteControl : Control)
+        + {abstract} comprobar(a : Articulo) : void
+    }
+
+    class ControlLote extends Control {
+        + comprobar(a : Articulo) : void
+    }
+
+    class ControlPeso extends Control {
+        + comprobar(a : Articulo) : void
+    }
+
+    class ControlEnvase extends Control {
+        + comprobar(a : Articulo) : void
+    }
+
+    class CompruebaCalidad {
+        + CompruebaCalidad()
+        + comprobar(a : Articulo) : void
+    }
+
+    CompruebaCalidad *- Control
+    Control o- Control
+}
+
+comprobaciones .left> Articulo
+
+class Articulo {
+    - nombre : String
+    - lote : int
+    - peso : int
+    - envasado : String
+    + Articulo(nombre, lote, peso, envasado)
+}
+note bottom of Articulo
+    Tipo:
+    Lote → entre 1000 y 2000
+    Peso → entre 1200 y 1300
+    Envase → "sano" o "casi sano"
+end note
+@enduml
