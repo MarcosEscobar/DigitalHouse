@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66036a49-17fa-446d-b626-a2a2f3d3f034" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1xBtkxqFa5sTJQpdNhGlw2G4Fpi" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Clinica Dental 1" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.17351598" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dh.service" />
+      <recent name="com.dh.dao" />
+      <recent name="com.dh.dao.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.com.dh.dao.impl" />
+      <recent name="com.dh.dao.impl" />
+      <recent name="com.dh.dao" />
+      <recent name="com.dh.dao.generadorSentencias" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ClinicaOdontologicaTest">
+    <configuration name="ClinicaOdontologicaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sincronico-clinica-dental" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dh.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.service.ClinicaOdontologicaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClinicaOdontologicaTest.test01DarDeAltaPacienteConDomicilioID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sincronico-clinica-dental" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dh.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.service.ClinicaOdontologicaTest" />
+      <option name="METHOD_NAME" value="test01DarDeAltaPacienteConDomicilioID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClinicaOdontologicaTest.test06DarDeBajaPaciente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sincronico-clinica-dental" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dh.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.service.ClinicaOdontologicaTest" />
+      <option name="METHOD_NAME" value="test06DarDeBajaPaciente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClinicaOdontologicaTest.test07ActualizarDatosPaciente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sincronico-clinica-dental" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dh.service" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.service.ClinicaOdontologicaTest" />
+      <option name="METHOD_NAME" value="test07ActualizarDatosPaciente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DomicilioDaoH2Test and 3 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sincronico-clinica-dental" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="com.dh.dao.impl.DomicilioDaoH2Test" />
+        <pattern testClass="com.dh.dao.impl.PacienteDaoH2Test" />
+        <pattern testClass="com.dh.dao.GeneradorDeSentenciasTest" />
+        <pattern testClass="com.dh.service.ClinicaOdontologicaTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.DomicilioDaoH2Test and 3 more" />
+      <item itemvalue="JUnit.ClinicaOdontologicaTest.test06DarDeBajaPaciente" />
+      <item itemvalue="JUnit.ClinicaOdontologicaTest.test07ActualizarDatosPaciente" />
+      <item itemvalue="JUnit.ClinicaOdontologicaTest" />
+      <item itemvalue="JUnit.ClinicaOdontologicaTest.test01DarDeAltaPacienteConDomicilioID" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClinicaOdontologicaTest" />
+        <item itemvalue="JUnit.DomicilioDaoH2Test and 3 more" />
+        <item itemvalue="JUnit.ClinicaOdontologicaTest.test01DarDeAltaPacienteConDomicilioID" />
+        <item itemvalue="JUnit.ClinicaOdontologicaTest.test07ActualizarDatosPaciente" />
+        <item itemvalue="JUnit.ClinicaOdontologicaTest.test06DarDeBajaPaciente" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66036a49-17fa-446d-b626-a2a2f3d3f034" name="Changes" comment="" />
+      <created>1629840458065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629840458065</updated>
+      <workItem from="1629840459399" duration="24419000" />
+      <workItem from="1629927176180" duration="6704000" />
+      <workItem from="1629988504451" duration="7039000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dh/service/ClinicaOdontologica.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/dh/service/ClinicaOdontologicaTest.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dh/dao/impl/PacienteDaoH2.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/dh/service/ClinicaOdontologicaTest.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
