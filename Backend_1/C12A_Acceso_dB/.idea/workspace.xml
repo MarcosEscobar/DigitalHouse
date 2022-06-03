@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12b17c82-6183-4f0f-a775-4b22ea568b37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../C11S_Acceso_dB_Figuras (Pendiente)/Ejercicio mesa de trabajo tabla de figuras .pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/Ejercicio para las mesas de trabajo C12.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C12_ Integradora_Base_de_Datos/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C12_ Integradora_Base_de_Datos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C12_ Integradora_Base_de_Datos/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C12_ Integradora_Base_de_Datos/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C12_ Integradora_Base_de_Datos/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C12_ Integradora_Base_de_Datos/c12S.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/c12S.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C12_ Integradora_Base_de_Datos/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/src/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C12_ Integradora_Base_de_Datos/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12S_Acceso_dB_Integradora/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/Database/my.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/Database/my.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/Database/my.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/Database/my.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/daoH2asinc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/daoH2asinc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/src/dao/IDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/src/dao/IDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/src/dao/imp/avionDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/src/dao/imp/avionDAOH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/src/model/avion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/src/model/avion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daoH2asinc/src/svc/avionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C12A_Acceso_dB_Aviones/src/svc/avionService.java" afterDir="false" />
-    </list>
+    <list default="true" id="12b17c82-6183-4f0f-a775-4b22ea568b37" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
