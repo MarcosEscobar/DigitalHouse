@@ -1,0 +1,60 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam Shadowing true
+
+skinparam class {
+    ArrowColor Purple
+    BackgroundColor Pink
+    BorderColor Purple
+}
+
+skinparam note {
+    BackgroundColor LightYellow
+    BorderColor Purple
+}
+
+namespace manejadores #A9F5F2 {
+    abstract class Jerarca {
+        + Jerarca()
+        + Jerarca(siguienteJerarca : Jerarca)
+        + {abstract} leerDocumento(documento : Documento) : void
+    }
+
+    class Diputado extends Jerarca {
+        + leerDocumento(documento : Documento) : void
+    }
+
+    class Ministro extends Jerarca {
+        + leerDocumento(documento : Documento) : void
+    }
+
+    class Presidente extends Jerarca {
+        + leerDocumento(documento : Documento) : void
+    }
+
+    class Gobierno {
+        + Gobierno()
+        + leer(documento : Documento) : void
+    }
+
+    Gobierno *- Jerarca
+    Jerarca o- Jerarca
+}
+
+manejadores .left> Documento
+
+class Documento {
+    - contenido : String
+    - tipo : int
+     Documento(contenido : String, tipo : int)
+     leer(jerarca : Diputado) : void
+     leer(jerarca : Ministro) : void
+     leer(jerarca : Presidente) : void
+}
+note bottom of Documento
+    Tipo:
+    1 → Reservado
+    2 → Secreto
+    3 → Muy secreto
+end note
+@enduml
