@@ -125,3 +125,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+#log4J
+/Backend_1/apache-log4j-1.2.17
