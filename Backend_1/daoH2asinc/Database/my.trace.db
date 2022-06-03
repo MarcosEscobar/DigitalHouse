@@ -1,0 +1,25 @@
+2022-05-30 17:37:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AVION" already exists; SQL statement:
+CREATE TABLE AVION(ID INT PRIMARY KEY, MARCA VARCHAR(255), MODELO VARCHAR(255), MATRICULA VARCHAR(255), FECHAENTRADASERVICIO DATE) [42101-212]
+2022-05-30 17:40:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AVION" already exists; SQL statement:
+DROP TABLE IF EXISTS TEST [42101-212]
+2022-05-30 17:42:08 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-212]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at dao.imp.avionDAOH2.<init>(avionDAOH2.java:20)
+	at main.main(main.java:11)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 13 more

@@ -1,0 +1,40 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam Shadowing true
+
+skinparam class {
+    ArrowColor Purple
+    BackgroundColor Pink
+    BorderColor Purple
+}
+
+skinparam note {
+    BackgroundColor LightYellow
+    BorderColor Purple
+}
+
+abstract class Tarjeta {
+    - nrosFrente : int
+    - codigoSeguridad : int
+    - fechaVencimiento : String
+    + cobrar(importe : double) : void
+    # {abstract} procesarPago(importe : double) : void
+    # {abstract} mostrarPagoAutorizado() : void
+    - estaVencida() : boolean
+}
+
+class TarjetaCredito extends Tarjeta {
+    - limite : double
+    - saldoUtilizado : double
+    # procesarPago(importe : double) : void
+    # mostrarPagoAutorizado() : void
+}
+
+class TarjetaDebito extends Tarjeta {
+    - saldoDisponible : double
+    # procesarPago(importe : double) : void
+    # mostrarPagoAutorizado() : void
+}
+
+
+@enduml
