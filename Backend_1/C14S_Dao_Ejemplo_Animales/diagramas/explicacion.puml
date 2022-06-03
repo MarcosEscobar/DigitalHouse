@@ -1,0 +1,80 @@
+@startuml
+allowmixing
+
+skinparam database {
+    BorderColor pink
+    BackgroundColor purple
+    ArrowColor purple
+    FontColor pink
+}
+
+skinparam rectangle {
+    BorderColor purple
+    BackgroundColor lightpink
+    ArrowColor purple
+}
+
+skinparam class {
+    BorderColor purple
+    BackgroundColor pink
+    ArrowColor purple
+    AttributeIconSize 0
+}
+
+skinparam note {
+    BorderColor darkslateblue
+    BackgroundColor #90c0f0
+    FontColor darkslateblue
+}
+
+component Application {
+    package com #d9a4ff {
+        class Main {
+            + {static} main(args : String[])
+            + {static} getConnection() : Connection
+        }
+
+        interface "IDao<T>"{
+            + consultarPorId(t : T) : T
+            + insertarNuevo(t : T) : boolean
+        }
+
+        class "DaoH2<Animal>" {
+            + consultarPorId(a : Animal) : Animal
+            + insertarNuevo(a : Animal) : boolean
+        }
+
+        rectangle Animal
+
+        component JDBC #ffa6df {
+            interface Connection<<interface>>
+            interface Sentence<<interface>>
+            interface ResultSet<<interface>>
+        }
+        Main ..> "IDao<T>" : usa
+        "IDao<T>" <|.. "DaoH2<Animal>"
+        "IDao<T>" .> JDBC : usa
+        "DaoH2<Animal>" .> Animal : crea/usa
+    }
+    rectangle "Connection Object (H2)" as connectionH2
+    rectangle "Sentence Object (H2)" as sentenceH2
+    rectangle "ResultSet Object (H2)" as resultsetH2
+
+
+    connectionH2 ..up|> Connection
+    sentenceH2 ..up|> Sentence
+    resultsetH2 ..up|> ResultSet
+
+    database H2
+    note right
+        Podria ser cualquier otra DB
+    end note
+
+    H2 <--up> connectionH2
+    H2 <--up> sentenceH2
+    H2 <--up> resultsetH2
+}
+
+
+
+@enduml

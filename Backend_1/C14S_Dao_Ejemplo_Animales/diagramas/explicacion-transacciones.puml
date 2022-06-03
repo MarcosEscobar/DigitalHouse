@@ -1,0 +1,69 @@
+@startuml
+autonumber
+
+skinparam sequence {
+    ArrowColor purple
+    LifeLineBorderColor #E470FF
+    LifeLineBackgroundColor #E8D2FF
+}
+
+skinparam participant {
+    BorderColor purple
+    BackgroundColor lightpink
+}
+
+skinparam database {
+    BorderColor pink
+    BackgroundColor purple
+    ArrowColor purple
+}
+
+skinparam note {
+    BorderColor darkslateblue
+    BackgroundColor #90c0f0
+    FontColor darkslateblue
+}
+
+participant ":Main" as main
+participant ":Statement" as statement
+participant ":Connection" as connection
+database ":Database" as database
+
+
+main -> statement : execute(sentenciaCrearTabla)
+note left
+    podemos setear el autocommit a false
+    y manejar nosotres cuándo queremos que
+    se realice un commit, por ejemplo:
+    creamos la tabla
+end note
+activate statement
+statement -> connection : dispatch
+activate connection
+connection -> database : SQL (Insert, Update, Create)
+database --> connection : return
+connection --> statement : return
+deactivate connection
+statement --> main : return
+deactivate statement
+main -> statement : execute(sentenciaInsertarDatos)
+note left
+     insertamos los datos que queramos
+end note
+activate statement
+statement -> connection : dispatch
+activate connection
+connection -> database : SQL (Insert, Update, Create)
+database --> connection : return
+connection --> statement : return
+deactivate connection
+statement --> main : return
+deactivate statement
+main -[#red]> database : <font color = red>commit ambos execute
+note left
+     hacemos un commit para persistir todo
+     a la DB
+end note
+
+
+@enduml

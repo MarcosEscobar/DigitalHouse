@@ -1,0 +1,61 @@
+@startuml
+autonumber
+
+skinparam sequence {
+    ArrowColor purple
+    LifeLineBorderColor #E470FF
+    LifeLineBackgroundColor #E8D2FF
+}
+
+skinparam participant {
+    BorderColor purple
+    BackgroundColor lightpink
+}
+
+skinparam database {
+    BorderColor pink
+    BackgroundColor purple
+    ArrowColor purple
+}
+
+skinparam note {
+    BorderColor darkslateblue
+    BackgroundColor #90c0f0
+    FontColor darkslateblue
+}
+
+participant ":Main" as main
+participant ":Statement" as statement
+participant ":Connection" as connection
+database ":Database" as database
+
+main -> statement : execute(sentenciaCrearTabla)
+note left
+    por defecto la conexión automáticamente
+    commitea después de cada execute()
+end note
+activate statement
+statement -> connection : dispatch
+activate connection
+connection -> database : SQL (Insert, Update, Create)
+database --> connection : return
+connection -[#red]> database : <font color = red>commit
+connection --> statement : return
+deactivate connection
+statement --> main : return
+deactivate statement
+
+main -> statement : execute(sentenciaInsertarDatos)
+activate statement
+statement -> connection : dispatch
+activate connection
+connection -> database : SQL (Insert, Update, Create)
+database --> connection : return
+connection -[#red]> database : <font color = red>commit
+connection --> statement : return
+deactivate connection
+statement --> main : return
+deactivate statement
+
+
+@enduml

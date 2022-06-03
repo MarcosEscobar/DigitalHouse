@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS medicamentos (id INT PRIMARY KEY, codigo VARCHAR(10), nombre VARCHAR(50), laboratorio VARCHAR(50), cantidad INT, precio DOUBLE);
