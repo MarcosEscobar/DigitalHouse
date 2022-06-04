@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS odontologos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id LONG AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
-    numeroMatricula VARCHAR(50) NOT NULL
+    matricula INTEGER NOT NULL
 );

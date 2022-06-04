@@ -1,11 +1,48 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+allowmixing
 
-autonumber
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+component Application {
+    package com.odontologos {
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+        package dao {
+            interface "IDao<T>"{
+                + guardar (T t) : T ;
+                + buscar(Long id) : T;
+                + listar() : List<T> ;
+                + eliminar(T t) : Boolean;
+            }
+
+            package impl {
+                class "OdontologoDaoH2<Odontologo>" {
+                    + guardar(Odontologo odontologo) : Odontologo ;
+                    + listar() : List<Odontologo> ;
+                    + buscar(Long id) : odontologo;
+                    + eliminar(Long id) : Boolean;
+                }
+            }
+
+        }
+
+        package service {
+            class Service {
+                + guardar(Long id, String nombre, String apellido, Int matricula)
+                + listar() : List<Odontologo>
+                + buscar(Long id) : Long
+            }
+        }
+
+        package model {
+            rectangle Odontologo
+        }
+        database H2
+        Service o-- "IDao<T>"
+        "IDao<T>" <|.. "OdontologoDaoH2<Odontologo>"
+        "OdontologoDaoH2<Odontologo>" .> Odontologo
+        "OdontologoDaoH2<Odontologo>" <--> H2
+    }
+
+
+}
+
 @enduml
