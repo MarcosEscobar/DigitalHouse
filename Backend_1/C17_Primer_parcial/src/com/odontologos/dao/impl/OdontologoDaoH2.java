@@ -1,4 +1,4 @@
-package com.odontologos.dao;
+package com.odontologos.dao.impl;
 
 public class OdontologoDaoH2 {
 }
