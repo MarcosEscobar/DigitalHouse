@@ -1,0 +1,4 @@
+Pepe;Pepardo;111;80000.0
+Pepa;Peparda;222;80000.0
+Pepo;Peposo;333;80000.0
+Pipo;Pipardo;444;80000.0
