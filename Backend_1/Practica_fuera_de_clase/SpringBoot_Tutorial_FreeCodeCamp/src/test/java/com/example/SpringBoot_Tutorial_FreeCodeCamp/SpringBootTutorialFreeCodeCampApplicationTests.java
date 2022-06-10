@@ -1,10 +1,10 @@
-package com.example.C22A_Patron_MVC;
+package com.example.SpringBoot_Tutorial_FreeCodeCamp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class C22APatronMvcApplicationTests {
+class SpringBootTutorialFreeCodeCampApplicationTests {
 
 	@Test
 	void contextLoads() {
