@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Clinica Odontológica Sarasa Inc.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<p th:text="'Nombre: ' + ${nombre_paciente}"/>
+<p th:text="'Apellido: ' + ${apellido_paciente}"/>
+<p th:text="'DNI: ' + ${dni}"/>
+<p th:text="'Fecha de ingreso: ' + ${fecha}"/>
+<br>
+<p>Domicilio:</p>
+<p th:text="'Calle: ' + ${calle}"/>
+<p th:text="'Número: ' + ${nro}"/>
+<p th:text="'Localidad: ' + ${localidad}"/>
+<p th:text="'Provincia: ' + ${provincia}"/>
+<br>
+<p>Se atiende con:</p>
+<p th:text="'Nombre: ' + ${nombre_odontologo}"/>
+<p th:text="'Apellido: ' + ${apellido_odontologo}"/>
+<p th:text="'Matricula: ' + ${matricula_odontologo}"/>
+<br>
+<button onclick="history.back()">Volver</button>
+</body>
+
+</html>

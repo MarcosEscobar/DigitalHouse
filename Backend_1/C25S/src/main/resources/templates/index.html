@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Clinica Odontológica Sarasa Inc.</title>
+</head>
+<script language="javascript" type="text/javascript">
+    function buttonClickPacientePorID(){
+    var id = document.getElementById("inputPacienteID").value;
+    window.location = "pacientes/"+id;
+    }
+
+    function buttonClickPacientesAll(){
+    window.location = "/pacientes";
+    }
+
+    function buttonClickOdontologoPorID(){
+    var id = document.getElementById("inputOdontologoID").value;
+    window.location = "/odontologoPorID?id="+id;
+    }
+
+    function buttonClickOdontologosAll(){
+    window.location = "/odontologosAll";
+    }
+</script>
+
+<body>
+<p>Bienvenido a Clinica Odontológica Sarasa!</p>
+<br>
+<p>Buscar paciente por ID</p>
+<div>
+    ID: <input type="text" id="inputPacienteID" name="inputPacienteID" value="" placeholder="Ingresar ID">
+    <br>
+    <br>
+    <input type="button" value="Buscar" OnClick="buttonClickPacientePorID()"/>
+</div>
+<br>
+<br>
+<p>Buscar todos los pacientes</p>
+<div>
+    <input type="button" value="Buscar" OnClick="buttonClickPacientesAll()"/>
+</div>
+<br>
+<br>
+<p>Buscar odontólogo por ID</p>
+<div>
+    ID: <input type="text" id="inputOdontologoID" name="inputOdontologoID" value="" placeholder="Ingresar ID">
+    <br>
+    <br>
+    <input type="button" value="Buscar" OnClick="buttonClickOdontologoPorID()"/>
+</div>
+<br>
+<br>
+<p>Buscar todos los odontólogos</p>
+<div>
+    <input type="button" value="Buscar" OnClick="buttonClickOdontologosAll()"/>
+</div>
+<br>
+<br>
+</body>
+</html>

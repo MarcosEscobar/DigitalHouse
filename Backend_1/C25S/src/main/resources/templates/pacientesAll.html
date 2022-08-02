@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Clinica Odontológica Sarasa Inc.</title>
+</head>
+<body>
+<div th:each="paciente : ${pacientes}">
+    <div th:text="'Nombre: ' + ${paciente.getNombre()}"></div>
+    <div th:text="'Apellido: ' + ${paciente.getApellido()}"></div>
+    <div th:text="'DNI: ' + ${paciente.getDNI()}"></div>
+    <div th:text="'Fecha de ingreso: ' + ${paciente.getFechaIngreso()}"></div>
+    <div th:text="'ID: ' + ${paciente.getId()}"></div>
+    <br>
+    <div>----------------------------------</div>
+    <br>
+</div>
+<br>
+<button onclick="history.back()">Volver</button>
+</body>
+</html>
